@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="..." />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="sidebar" value="/WEB-INF/layout/sidebar.jsp"  />
+        <put-attribute name="content" value="..." />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="home" extends="baseLayout">
+        <put-attribute name="title" value="Home"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/index.jsp"/>
+    </definition>
+    <definition name="showParkingLot" extends="baseLayout">
+        <put-attribute name="title" value="Parking Lot List"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/parkingLot/show.jsp"/>
+    </definition>
+    <definition name="detailParkingLot" extends="baseLayout">
+        <put-attribute name="title" value="Parking Lot Detail"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/parkingLot/detail.jsp"/>
+    </definition>
+    <definition name="createParkingLot" extends="baseLayout">
+        <put-attribute name="title" value="Create Parking Lot"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/parkingLot/create.jsp"/>
+    </definition>
+    <definition name="updateParkingLot" extends="baseLayout">
+        <put-attribute name="title" value="Parking Spot List"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/parkingLot/update.jsp"/>
+    </definition>
+    <definition name="showParkingSpots" extends="baseLayout">
+        <put-attribute name="title" value="Parking Spot List"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/parkingSpot/show.jsp"/>
+    </definition>
+    
+    <definition name="showUsers" extends="baseLayout">
+        <put-attribute name="title" value="User List"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/user/show.jsp"/>
+    </definition>
+    <definition name="userDetail" extends="baseLayout">
+        <put-attribute name="title" value="User Detail"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/user/detail.jsp"/>
+    </definition>
+    <definition name="createUser" extends="baseLayout">
+        <put-attribute name="title" value="Create User"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/user/create.jsp"/>
+    </definition>
+    <definition name="login" template="/WEB-INF/view/pages/auth/login.jsp"/>
+    <definition name="showBookingInformation" extends="baseLayout">
+        <put-attribute name="title" value="Show booking informations"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/bookingInformation/show.jsp"/>
+    </definition>
+    <definition name="ticket" extends="baseLayout">
+        <put-attribute name="title" value="Buy ticket"/>
+        <put-attribute name="content" value="/WEB-INF/view/pages/bookingInformation/buyticket.jsp"/>
+    </definition>
+</tiles-definitions>

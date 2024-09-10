@@ -1,0 +1,85 @@
+/* Đặt toàn bộ phần tử của Ticket trong một container */
+.ticket-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+.ticket-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Định dạng cho từng booking */
+.ticket-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ticket-item:hover {
+  transform: scale(1.02);
+}
+
+/* Các thông tin của booking */
+.ticket-item p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Định dạng cho trạng thái thanh toán */
+.payment-status {
+  font-weight: bold;
+  color: #d9534f;
+  /* Màu đỏ nếu chưa thanh toán */
+}
+
+.payment-status.paid {
+  color: #5cb85c;
+  /* Màu xanh lá nếu đã thanh toán */
+}
+
+/* Định dạng danh sách */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .ticket-container {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .ticket-item {
+    font-size: 14px;
+  }
+
+  .ticket-container h2 {
+    font-size: 24px;
+  }
+}
+
+.ticket {
+  height: 800px !important;
+}
+
+.ticket {
+  background-image: url("../../asset/images/wait.png");
+  height: 100%;
+}
